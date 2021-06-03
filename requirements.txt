@@ -5,7 +5,6 @@ beautifulsoup4
 certifi
 cffi
 chardet
-cryptography
 enum34
 et-xmlfile
 idna
