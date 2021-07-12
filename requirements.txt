@@ -13,11 +13,8 @@ jsonpointer
 natsort
 ndg-httpsclient
 openpyxl
-paramiko
 pyasn1
 pycparser
-pyOpenSSL
-PyYAML
 requests
 robotframework
 robotframework-angularjs
@@ -40,4 +37,3 @@ xlrd
 xlutils
 xlwt
 xvfbwrapper
-pymongo
