@@ -13,7 +13,7 @@ ENV PYTHON_VERSION=3.6 \
 
 ADD ubi.repo /etc/yum.repos.d/ubi.repo
 ADD scl_enable /usr/share/container-scripts/
-ADD requirements.txt requirements.txt  
+ADD requirements.txt requirements.txt
 RUN INSTALL_PKGS=" \
       rh-python36 rh-python36-python-devel rh-python36-python-setuptools rh-python36-python-wheel \
       rh-python36-python-pip nss_wrapper \
@@ -35,6 +35,7 @@ RUN INSTALL_PKGS=" \
     rm -f /etc/yum.repos.d/mirror* && \
     yum -y clean all --enablerepo='*' && \
     source scl_source enable rh-python36 && \
+    python3 -m pip install --upgrade pip && \
     python3 -m pip install -r requirements.txt && \
     scl enable rh-python36 bash
 
