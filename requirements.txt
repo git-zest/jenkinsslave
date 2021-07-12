@@ -1,6 +1,4 @@
-asn1crypto
 backports.functools-lru-cache
-bcrypt
 beautifulsoup4
 certifi
 cffi
